@@ -1,4 +1,4 @@
-%{!?configopts: %global configopts LDFLAGS=-Wl,--build-id}
+%{!?configopts: %global configopts LDFLAGS="-Wl,--build-id -Wl,-rpath,%{_libdir}"}
 
 
 # Define install_modulefile to 1 if you want this RPM to install a modulefile.
